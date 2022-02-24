@@ -9,12 +9,14 @@
     "dev": "cross-env NODE_ENV=development remix dev",
     "postinstall": "remix setup node",
     "start": "cross-env NODE_ENV=production remix-serve build",
-    "migrate": "DATABASE_URL=postgres://postgres:1@localhost:5432/views-trading?schema=public prisma migrate dev"
+    "migrate": "DATABASE_URL=postgres://postgres:1@localhost:5432/views?schema=public prisma migrate dev"
   },
   "dependencies": {
+    "@prisma/client": "^3.10.0",
     "@remix-run/react": "^1.2.2",
     "@remix-run/serve": "^1.2.2",
     "cross-env": "^7.0.3",
+    "prisma": "^3.10.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "remix": "^1.2.2"
